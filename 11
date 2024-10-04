@@ -1,0 +1,31 @@
+a1, b1 = int(input()),int(input())
+a2, b2 = int(input()),int(input())
+
+if a1 < a2 and b2 < b1:
+	    print(a2,b2, ".1")
+	
+elif a2 < a1 and b2 < b1: #не факт 
+	print(a1,b1,".2")
+elif a2 > a1 and a2 < b1:
+	print(a2,b1,".3")
+elif a1 > a2 and a1 < b2:
+	print(a1,b1,".4")
+elif b1 == a2 or a1 == b2:
+	if b1 == a2:
+		print(a2,".5")
+	else:
+		print(a1,".6")
+elif a1 == a2 or b1 < b2:
+	if a1 == a2:
+		print(a2, b1,".7")
+	else:
+		print(b2,".8")
+elif b1 == b2 or a1 == a2:
+	if b1 == b2:
+		print(b2,".9")
+	else:
+		print(a2,".10")
+elif a1 == a2 and b1 == b2:
+	print(a2,b2,".11")
+else:
+	print("пустое множество")
