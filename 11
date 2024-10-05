@@ -29,3 +29,24 @@ elif a1 == a2 and b1 == b2:
 	print(a2,b2,".11")
 else:
 	print("пустое множество")
+a1, b1 = int(input()),int(input())
+a2, b2 = int(input()),int(input())
+
+if a1 > a2 and b1 <b2:
+    print(a1, b1)
+elif a1==a2 and b1<b2:
+    print(a1, b1, "m")
+elif a1 < a2 and b2 < b1:
+    print (a2,b2,"..6")
+elif a2 < a1 and b1==b2:
+    print(a1,b1,"...7")
+elif a1==a2 and b2<b1:
+    print(a2,b2,"...8")
+elif a1< a2 and b1== b2:
+    print(a2,b2,"...9")
+elif a1 == a2 and b1 == b2:
+    print(a2,b2)
+elif a2 < a1 and b2 < b1:
+    print(a1, b2,"...11")
+    
+
